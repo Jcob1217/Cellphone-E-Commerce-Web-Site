@@ -1,0 +1,26 @@
+    .price {
+        font-size: 34px;
+    }
+
+    .price,
+    .adjust-installemnts,
+    .in-stock-container,
+    .send-info,
+    .return-info {
+        padding: 25px 0px;
+        border-bottom: 1px solid rgb(224, 224, 224);
+        display: flex;
+        flex-direction: row;
+        column-gap: 1em;
+        align-items: center;
+    }
+
+    button {
+        margin: 25px 0px;
+        background-color: rgb(40, 40, 40);
+        font-size: 18px;
+        padding: 13px;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }

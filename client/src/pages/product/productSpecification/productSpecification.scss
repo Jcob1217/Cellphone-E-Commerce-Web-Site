@@ -1,0 +1,24 @@
+.product-specification {
+
+    .header {
+        font-size: 28px;
+        margin: 10px 0;
+        padding: 20px 0px;
+        border-bottom: 1px solid rgb(224, 224, 224);
+    }
+
+    .screen-size,
+    .display-resolution,
+    .display-type,
+    .ram-container,
+    .memory,
+    .battery,
+    .processor,
+    .camera-rear,
+    .camera-front {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 0px;
+        border-bottom: 1px solid rgb(224, 224, 224);
+    }
+}

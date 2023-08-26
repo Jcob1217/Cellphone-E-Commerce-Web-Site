@@ -1,0 +1,7 @@
+.home {
+    padding: 60px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 440px);
+    justify-content: center;
+    gap: 3em 5em;
+}

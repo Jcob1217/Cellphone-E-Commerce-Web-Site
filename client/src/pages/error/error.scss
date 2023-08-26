@@ -1,0 +1,30 @@
+.error {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .card {
+        text-align: center;
+        padding: 25px 35px;
+        border-radius: 10px;
+        border: 2px solid rgb(224, 224, 224);
+
+        h1 {
+            margin: 10px 0px;
+            font-size: 38px;
+            color: rgb(224, 224, 224)
+        }
+
+        h2 {
+            margin: 10px 0px;
+            font-size: 30px
+        }
+
+        a {
+            display: block;
+            margin: 10px 0px;
+        }
+    }
+}

@@ -1,0 +1,168 @@
+.cart-page {
+    display: flex;
+    flex-direction: row;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 350px);
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0px 40px;
+
+
+        .grid-container {
+            display: grid;
+            grid-template-rows: repeat(2, 80px) repeat(auto-fill, 220px);
+            grid-template-columns: 50px repeat(5, 1fr);
+            padding: 20px 0px;
+
+            .header {
+                display: flex;
+                grid-column: 1 / span 6;
+                font-size: 28px;
+                justify-content: left;
+            }
+
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 10px;
+                text-align: center;
+                border-bottom: 1px solid rgb(224, 224, 224);
+
+                img {
+                    object-fit: scale-down;
+                    height: 200px;
+                    width: auto;
+                    margin: 0 auto;
+                }
+
+            }
+
+            .item-price,
+            .quantity {
+                color: rgb(140, 140, 140);
+
+                input {
+                    text-align: center;
+                    padding: 12px 5px;
+                    border: 1px solid rgb(224, 224, 224);
+                    color: rgb(140, 140, 140);
+                    width: 2em;
+                }
+
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                input:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        button {
+            width: fit-content;
+            margin-left: auto;
+            background-color: rgb(200, 200, 200);
+            font-size: 14px;
+            padding: 10px 25px;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+
+    .right {
+        background-color: white;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 40px;
+        width: 350px;
+        height: 100vh;
+        border-left: 1px solid rgb(224, 224, 224);
+
+        .cart-totals,
+        .subtotal,
+        .shipping,
+        .total {
+            padding: 25px 0px;
+            border-bottom: 1px solid rgb(224, 224, 224);
+        }
+
+        .cart-totals {
+            font-size: 28px;
+        }
+
+        .subtotal {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .shipping {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .shipping-methods {
+                display: flex;
+                flex-direction: column;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+                    row-gap: 1em;
+                    column-gap: 5px;
+
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: baseline;
+                        font-size: 14px;
+
+                        input {
+                            accent-color: black;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .total {
+            display: flex;
+            justify-content: space-between;
+            border: none;
+        }
+
+        button {
+            margin-top: 25px;
+            background-color: rgb(40, 40, 40);
+            font-size: 18px;
+            padding: 13px;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+button:active {
+    opacity: 0.7;
+}
